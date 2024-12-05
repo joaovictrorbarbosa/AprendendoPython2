@@ -3,7 +3,7 @@ somaidade = 0
 mediaidade = 0
 maioridadeh = 0
 nomevelho = ''
-totm20 = 0
+totm20 = 0 
 for p in range(1, 5):
     print('{}ª pessoa: '.format(p))
     nome = str(input('Nome: ')).strip()
