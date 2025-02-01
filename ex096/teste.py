@@ -1,5 +1,5 @@
-import moeda
+from ex096 import moeda
 p = float(input('Qual preço do produto? R$ '))
-print(f'A metade do preço é de R${moeda.metade(p)}.')
-print(f'O dobro do preço é de R${moeda.dobro(p)}.')
-print(f'aumentando 20%, o valor será de R${moeda.aumentar(p,20)}.')
+print(f'A metade de {moeda.moeda(p)} é igual a {moeda.metade(p, True)}.')
+print(f'O dobro de {moeda.moeda(p)} é de {moeda.dobro(p, True)}.')
+print(f'aumentando 20%, o valor de {moeda.moeda(p)} será de {moeda.aumentar(p,20, True)}.')
