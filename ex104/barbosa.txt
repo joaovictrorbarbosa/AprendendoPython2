@@ -1,5 +1,0 @@
-joao: 23
-clara: 19
-maria julia: 3
-elizangela: 43
-kira: 50

@@ -8,12 +8,17 @@ if not arqExiste(arq):
     criarArquivo(arq)
 
 while True:
-    resposta = menu(['Cadastrar pessoas', 'Listar pessoas', 'Sair do sistema'])
+    resposta = menu(['Listar pessoas', 'Cadastrar pessoas', 'Sair do sistema'])
     if resposta == 1:
         #Opção de listar conteudo de arquivo:
         lerArquivo(arq)
     elif resposta == 2:
-        cabecalho('Opção 2')
+        #Opção de cadastrar pessoa:
+        cabecalho('NOVO CADASTRO')
+        nome = str(input('Nome: '))
+        idade = leiaint('Idade: ')
+        cadastrar(arq, nome, idade)
+
     elif resposta == 3:
         cabecalho('Saindo do sistema... Até mais')
         break
